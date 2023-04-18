@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500&family=Play&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -19,7 +21,7 @@
 .wrapper {
     display: flex;
     flex-direction: row;
-
+    font-family: 'Play', sans-serif;
     padding: 32px 0 0 32px;
 }
 
@@ -42,6 +44,9 @@
 .today {
     font-size: 9px;
 }
+.today span:nth-child(2) {
+    color: red;
+}
 
 .wrapper__left__body{
     width: 100%;
@@ -60,20 +65,69 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+
 }
 
 .left__body__header__gray {
     width: 148px;
     height: 133px;
-    background-color: gray;
+    background-image: url("../images/pro.png");
+    background-position: center;
+    background-size: cover;
+ 
+
 }
 .left__body__header__line {
     border-top: 1px dotted black;
-    margin: 12px 0;
+    margin: 12px 0 5px 0;
 }
-.left__body__profile {}
-.left__body__footer {}
+.left__body__profile {
+    width: 150px;
+    font-size: 8px;
+    text-align: center;
+    padding: 1px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.left__body__profile span {
+    font-weight: bold;
+    color:#06A3C5;
+}
+.left__body__profile__msg {
+    width: 148px;
+    height: 130px;
+    padding-top:5px;
+    font-size: 12px;
+}
 
+.left__body__footer {
+    width: 148px;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0,0,0,0.8);
+}
+.left__body__footer__history{
+    font-size: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted black;
+    margin: 10px 0;
+}
+.left__body__footer__name {
+    font-size: 15px;
+    font-weight: bold;
+    color:#005A99;
+}
+
+.left__body__footer__birth{
+    font-size: 10px;
+    color: rgba(0,0,0,0.6);
+}
+.left__body__footer select {
+    width: 148px;
+    margin-top: 5px;
+    
+}
 
 .wrapper__right {
     width: 524px;
